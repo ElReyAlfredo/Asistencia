@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h2>Formulario de Datos</h2>
+      <form id="formularioEstudiante">
+        <label for="nombres">Nombres:</label>
+        <input
+          type="text"
+          id="nombres"
+          name="nombres"
+          pattern="^[A-Za-z\s]*$"
+          required
+        /><br /><br />
+
+        <label for="apellidoPaterno">Apellido Paterno:</label>
+        <input
+          type="text"
+          id="apellidoPaterno"
+          name="apellidoPaterno"
+          pattern="^[A-Za-z\s]*$"
+          required
+        /><br /><br />
+
+        <label for="apellidoMaterno">Apellido Materno:</label>
+        <input
+          type="text"
+          id="apellidoMaterno"
+          name="apellidoMaterno"
+          pattern="^[A-Za-z\s]*$"
+          required
+        /><br /><br />
+
+        <label for="numeroCuenta">Número de Cuenta:</label>
+        <input
+          type="text"
+          id="numeroCuenta"
+          name="numeroCuenta"
+          maxlength="8"
+          required
+        /><br /><br />
+
+        <label for="gradoGrupo">Grado y Grupo:</label>
+        <input
+          type="text"
+          id="gradoGrupo"
+          name="gradoGrupo"
+          maxlength="2"
+          required
+        /><br /><br />
+
+        <label for="asistencia">Asistencia:</label>
+        <input
+          type="checkbox"
+          id="asistencia"
+          name="asistencia"
+          required
+        /><br /><br />
+
+        <input type="submit" value="Enviar" />
+        <button type="button" id="agregarNuevo">Agregar Otro</button>
+        <!-- Botón para mostrar el listado de estudiantes -->
+        <button type="button" id="mostrarListado">
+          Mostrar Listado de Estudiantes
+        </button>
+      </form>
+    </div>
+
+    <div id="infoEstudiante"></div>
+
+    <div id="listadoEstudiantes"></div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
