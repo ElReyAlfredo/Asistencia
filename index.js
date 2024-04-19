@@ -64,7 +64,7 @@ document
     estudiantes.forEach((estudiante, i) => {
       listadoTexto += `${
         i + 1
-      } ${estudiante.getNombre()} ${estudiante.getApellidoPaterno()} ${estudiante.getApellidoMaterno()}<br>`;
+      } ${estudiante.getNombre()} ${estudiante.getApellidoPaterno()} ${estudiante.getApellidoMaterno()} ${estudiante.getNumeroCuenta()}<br>`;
     });
 
     // Actualizar el contenido del elemento HTML con el listado de estudiantes

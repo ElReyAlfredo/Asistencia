@@ -105,11 +105,11 @@ class Estudiante {
 
         // Calcular la asistencia según las condiciones
         this.asistencia = 1;
-        if (cuentaDoble && cuentaTriple) {
-          this.asistencia *= 5;
-        } else if (cuentaDoble) {
+
+        if (cuentaDoble) {
           this.asistencia *= 2;
-        } else if (cuentaTriple) {
+        }
+        if (cuentaTriple) {
           this.asistencia *= 3;
         }
       }
